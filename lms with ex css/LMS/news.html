@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Omnifood</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/css/img/LSM_logo_tr.png" alt="Ominifood Logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#">News Feeds</a></li>
+                        <li><a href="#">Clubs & Societies</a></li>
+                        <li><a href="#">Other</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                            <img src="resources/css/img/Poson.jpg" style="width:100%">
+                            
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                            <img src="resources/css/img/Sathkara.jpg" style="width:100%">
+                                <div class="text">Donations for Flood Victims</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                            <img src="resources/css/img/Vesak%20Kalapaya.jpg" style="width:100%">
+                                <div class="text">Price Giving of Vesak NSBM Kalapaya</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                         for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                            slideIndex++;
+                        if (slideIndex> slides.length) {slideIndex =1}    
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                        setTimeout(showSlides, 10000); // Change image every 2 seconds
+                    }
+                </script>
+ </div>
+            
+        </header>
+        
+        <section class="more">
+        <div class="hero-text-box">
+                <h1>Quality teaching<br>succesfull students Use it yourself.!.</h1>
+                <a class="btn btn-full" href="#">Login</a>
+                <a class="btn btn-ghost" href="#">Show me more</a>
+        </div>
+        </section>
+        
+    
+    
+    </body>
+    
+    
+
+</html>
