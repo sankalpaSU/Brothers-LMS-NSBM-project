@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NSBM | LMS</title>
+<link rel="icon" href="Imgs/LSM_logo_tr.png" type="image/gif" sizes="300x300">
+<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/SSudheers_Style_3.css" type="text/css">
+</head>
+<body style="background-color:rgba(0,0,0,1.00)">
+<div class="back">
+<div class="container" style="height:200px;">
+</div>
+<div class="container" style="background-color:transparent;height:auto;padding-bottom:100px">
+	<div style="width:60%;margin:auto;background-color:transparent;height:auto">
+    	<div class="fac">
+        	<div id="comp" class="facHeading">
+        		<p>SCHOOL OF COMPUTING</p>
+            </div>
+            <div id="compY" class="years">
+            	<div>
+                    <a href="">
+                        <div>
+                            <h4>Year 0</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 1</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 2</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 3</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 4</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>PGD</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Other</h4>
+                        </div>
+                     </a>
+                 </div>
+            </div>
+        </div>
+    	<div class="fac">
+        	<div id="bus" class="facHeading">
+        		<p>SCHOOL OF BUSINESS</p>
+            </div>
+            <div id="busY" class="years">
+            	<div>
+                    <a href="">
+                        <div>
+                            <h4>Year 0</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 1</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 2</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 3</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 4</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>PGD</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Other</h4>
+                        </div>
+                     </a>
+                 </div>
+            </div>
+        </div>
+    	<div class="fac">
+        	<div id="eng" class="facHeading">
+        		<p>SCHOOL OF ENGINEERING</p>
+            </div>
+            <div id="engY" class="years">
+            	<div>
+                    <a href="">
+                        <div>
+                            <h4>Year 0</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 1</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 2</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 3</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Year 4</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>PGD</h4>
+                        </div>
+                     </a>
+                     <a href="">
+                        <div>
+                            <h4>Other</h4>
+                        </div>
+                     </a>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+<!-- jQuery -->
+<script src="js/jQuery_v3.2.1.js"></script>
+<script>
+$('.back').fadeIn(300);
+$('#comp').click(
+	function(){
+		$('#compY').slideToggle(300);
+		$('#busY,#engY').slideUp(300);
+	});
+$('#bus').click(
+	function(){
+		$('#busY').slideToggle(300);
+		$('#compY,#engY').slideUp(300);
+	});
+$('#eng').click(
+	function(){
+		$('#engY').slideToggle(300);
+		$('#compY,#busY').slideUp(300);
+	});
+
+
+
+
+
+
+</script>
+</body>
+</html>

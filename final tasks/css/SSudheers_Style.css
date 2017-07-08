@@ -1,0 +1,260 @@
+@charset "utf-8";
+/*
+*
+*@author SSudheera
+*
+*/
+/*.back{
+	background-image:url(../image/banner42.jpg);
+	height:auto;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	display:none;
+}*/
+.nav{
+	width:100%;
+	height:50px;
+	background-color:rgba(0,0,0,0.5);
+	position:fixed;
+	z-index:1030;
+	}
+#nav-brand-mob{
+	float:left;
+	padding-left:15px;
+	padding-right:15px;
+	width:100px;
+	height:50px;
+	}
+#navList{
+	float:left;
+	background-color:transparent;
+	width:auto;
+	padding-left:100px;
+	}
+#navList>ul{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	}
+#navList>ul>li{
+	height:47px;
+	background-color:transparent;
+	text-align:center;
+	padding:0px;
+	font-size:15px;
+	width:250px;
+	float:left;
+	color:rgba(255,255,255,1.00);
+	transition:0.3s;
+	cursor:pointer;
+	}
+#navList>ul>li:hover{
+	background-color:rgba(25,88,157,1.00);
+	border-bottom:3px;
+	border-bottom-style:solid;
+	border-bottom-color:rgba(60,181,76,1.00);
+}
+#navList>ul>li:focus{
+	background-color:rgba(25,88,157,0.8);
+	}
+#navList>ul>li>h2{
+	font-family:'Square721_BT';
+	padding:8px;
+	margin:0px;
+	cursor:pointer;
+	z-index:1;
+	text-align:center;
+	}
+#loginBtnNav{
+	display:none;
+	}
+#navMobResBtncont{
+	float:right;
+	height:50px;
+	width:50px;
+	background-color:transparent;
+	position:fixed;
+	right:0;
+	top:0;
+	padding:0px;
+	display:none;
+	}
+#navMobResBtn{
+	height:24px;
+	width:24px;
+	background-color:transparent;
+	margin:10px;
+	border:2px;
+	border-color:rgba(255,255,255,1.00);
+	border-style:solid;
+	border-radius:5px;
+	color:rgba(255,255,255,1.00);
+	transition:0.5s;
+	}
+#navMobResBtn:hover{
+	background-color:rgba(255,255,255,1.00);
+	color:rgba(0,0,0,1.00);
+	cursor:pointer;
+	}
+#navClose{
+	display:none;
+	}
+#loginNavBtnCont{
+	float:right;
+	height:50px;
+	width:80px;
+	background-color:transparent;
+	color:rgba(255,255,255,1.00);
+	padding:0px;
+	z-index:1;
+	}
+#loginNavBtn{
+	background-color:transparent;
+	width:80px;
+	height:49px;
+	padding-top:1px;
+	transition:0.5s;
+	text-align:center;
+	}
+#loginNavBtnCont:hover{
+	background-color:rgba(60,181,76,1.00);
+	cursor:pointer;
+	}
+@media  screen and (max-width: 1100px) {
+	#navList{
+		display:none;
+		width:100%;
+		z-index:1;
+		float:none;
+		margin-top:50px;
+		margin-left:0px;
+		padding-left:0px;
+		background-color:rgba(0,0,0,0.8);
+	}
+	#loginNavBtn,#loginNavBtnCont{
+		display:none;
+		}
+	#navMobResBtncont{
+		display:block;
+		}
+	#navList>ul>li{
+		float:none;
+		position:relative;
+		width:100%;
+		height:50px;
+		padding-top:10px;
+		
+	}
+	#loginBtnNav{
+		display:block;
+	}
+	#navList>ul>li{
+		width:100%;
+		height:50px;
+	}
+	#navList>ul>li>h2{
+		text-align:left;
+		}
+}
+/* nav bar mobile responsive code : when min-width to max-width .ssudee*/
+@media  screen and (min-width: 1100px) {
+	#navList{
+		display:block !important;
+	}
+}
+#NewsCont{
+	width:100%;
+	height:702px;
+	background-color:rgba(0,0,0,0.5);
+	padding-top:50px;
+	text-align:center;
+	}
+#NewsCont>div:not(#NewsFeeds){
+	display:none;
+	}
+#login{
+	transition:0.7s;
+	border:0px;
+	background-color:#229324;
+	color:#FFFFFF;
+	width:60px;
+	height:30px;
+	margin-top:5px;
+	border-radius:4px;
+	font-weight:bold;
+	}
+#login:hover{
+	background-color:#FFFFFF;
+	color:#229324;
+	width:90px;
+}
+#loginCont{
+	width:285px;
+	margin:auto;
+	display:none;
+	height:500px;
+	padding-top:200px
+	}
+#NewsFeedsCont{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/NSBM6.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+	padding-top:10px
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+.back{
+	background-image:url(../Imgs/banner42.jpg);
+	min-height:702px;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position:center;
+	background-size:cover;
+	display:none;
+}
+#first_load{
+	background-color:rgba(0,0,0,0.8);
+	min-height:602px;
+	padding-top:100px;
+	}
+.firstLoadLMSLogo_c1{
+	box-shadow:0px 0px 10px rgba(60,181,76,1.00);
+	}
+.firstLoadLMSLogo_c2{
+	box-shadow:0px 0px 10px rgba(25,88,157,1.00);
+	}
+#first_load_logo_cont{
+	margin:auto;
+	max-width:300px;
+	padding:10px;
+	position:absolute;
+	top:300px;
+	opacity:0;
+	}
+#first_load_heading{
+	position:absolute;
+	top:550px;
+	opacity:0;
+	}
+#prog_bar{
+	opacity:0;
+	}
+#firstLoadProgBarIn{
+	height:10px;
+	width:0px;
+	background-color:rgba(60,181,76,0.9);
+	max-width:200px;
+	border-radius:3px
+	}
+#pageContent{
+	display:none;
+	}

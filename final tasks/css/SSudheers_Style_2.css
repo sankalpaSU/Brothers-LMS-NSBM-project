@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*
+*
+*@author SSudheera
+*
+*/
+
+.row{
+	margin:0px;
+	padding:0px;
+	background-color:rgba(156,65,67,0);
+	width:100%;min-height:500px;
+	margin-top:10px;
+	}
+.col_1{
+	float:left;
+	width:30%;
+	height:auto;
+	background-color:rgba(216,158,159,0);
+	}
+.col_2{
+	float:left;
+	width:40%;
+	height:auto;
+	background-color:rgba(216,158,159,0);
+	}
+.detailsCont1,.detailsCont2{
+	width:auto;
+	height:auto;
+	background-color:rgba(216,215,215,0.8);
+	box-shadow:0px 5px 10px rgba(0,0,0,1.00);
+	}
+.detailHead1,.detailHead2{
+	width:auto;
+	background-color:rgba(255,255,255,0.9);
+	height:auto;
+	margin-top:5px;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	z-index:1;
+	}
+.detailHead1>p,.detailHead2>p{
+	text-align:left;
+	margin-top:2px;
+	margin:0px;
+	padding:5px;
+	color:rgba(25,88,157,1.00);
+	font-size:16px;
+	font-weight:bold;
+	padding-left:10px;
+	}
+.detailHead1:hover,.detailHead2:hover{
+	cursor:pointer;
+	background-color:rgba(228,228,228,0.80);
+	}
+.detailHead1:active,.detailHead2:active{
+	background-color:rgba(205,205,205,0.8)}
+#sUP1,#sUP2{
+	display:none;
+	}
+.lessonCont{
+	background-color:transparent;
+	width:auto;
+	height:auto;
+	padding:5px;
+	padding-top:74px;
+	}
+.lessonCont>a{
+	text-decoration:none;
+	}
+.lessons{
+	background-color:rgba(255,255,255,0.9);
+	min-height:50px;
+	width:auto;
+	border-radius:5px;
+	margin-bottom:7px;
+	color:rgba(0,0,0,1.00);
+	transition:0.5s;
+	box-shadow:0px 0px 10px rgba(0,0,0,1.00);
+	}
+.lessons>p{
+	text-align:center;
+	margin:0px;
+	padding:13px;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:14px
+	}
+.lessons:hover{
+	background-color:rgba(60,181,76,0.9);
+	cursor:pointer;
+	color:rgba(255,255,255,1.00);
+	}
+.lessons:active{
+	background-color:rgba(49,148,62,0.90);
+	}
+@media screen and (max-width: 800px){
+	.col_1,.col_2{
+		float:none;
+		width:100%;
+		}
+	.lessonCont{
+		padding-top:10px;
+		}
+}
+
